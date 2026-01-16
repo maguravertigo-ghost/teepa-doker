@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://wjsn14ivwy46"]
+
+[ext_resource type="Texture2D" uid="uid://k5matf5sp41i" path="res://Tilesets/tilemap.png" id="1_g2tbl"]
+
+[sub_resource type="GDScript" id="GDScript_g2tbl"]
+script/source = "extends Node2D
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkp8b"]
+atlas = ExtResource("1_g2tbl")
+region = Rect2(51, 86, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cm0pq"]
+size = Vector2(16, 16)
+
+[node name="BOX" type="ColorRect"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 16.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+mouse_filter = 2
+script = SubResource("GDScript_g2tbl")
+
+[node name="Sprite" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("AtlasTexture_wkp8b")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(8, 8)
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_cm0pq")
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

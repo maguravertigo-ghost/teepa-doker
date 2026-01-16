@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://b7tyxjfnxo17p"]
+
+[ext_resource type="FontFile" uid="uid://cqyuje32eft1n" path="res://FONTS/om_large_plain.ttf" id="1_alxmd"]
+
+[resource]
+font = ExtResource("1_alxmd")
+font_size = 48
+font_color = Color(0.809369, 0.638371, 0.329681, 1)
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 1)

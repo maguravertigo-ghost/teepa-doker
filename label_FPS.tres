@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cqr2wh21dge6r"]
+
+[sub_resource type="SystemFont" id="SystemFont_r0du0"]
+
+[resource]
+font = SubResource("SystemFont_r0du0")
+font_size = 32
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 1)
