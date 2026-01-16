@@ -1,6 +1,7 @@
 # Multitouch View with GDScript
 
-Simple debugger for multitouch input. Shows colored dots everywhere you press.
+A game about hero, who changes his talents to escspe from dungeon.
+RPG elememts, sokoban, docker style.
 
 Language: GDScript
 
