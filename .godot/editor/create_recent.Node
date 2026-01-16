@@ -1,0 +1,14 @@
+AnimationPlayer
+Node2D
+ColorRect
+TextureRect
+Label
+TileMap
+TouchScreenButton
+CollisionShape2D
+CollisionPolygon2D
+Area2D
+StaticBody2D
+CanvasLayer
+Panel
+Control
